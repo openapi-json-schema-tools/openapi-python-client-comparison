@@ -21,7 +21,7 @@ via vscode code counter tool
 
 ### petstore.yaml
 
-| Language | Files | Code |
+| Generator | Files | Code |
 | -------- | ----- | ---- |
 | openapi_generator_python_nextgen | 27 | 2712 |
 | openapi_generator_python_prior | 30 | 5075 |
@@ -31,11 +31,6 @@ Reasons for the openapi json scheme generator difference
 - has overload type hints on all endpoints, allows input content type selection
 - json paths used to create files so many files made
 - object models have getters written for optional properties
-
-
-## load times
-- python-prior ImportError
-- 
 
 ## Generate
 
