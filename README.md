@@ -30,6 +30,7 @@ via vscode code counter tool
 Reasons for the openapi json scheme generator difference
 - has overload type hints on all endpoints, allows input content type selection
 - json paths used to create files so many files made
+- object models have getters written for optional properties
 
 
 ## load times
