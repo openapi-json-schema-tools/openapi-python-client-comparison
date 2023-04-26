@@ -30,7 +30,8 @@ via vscode code counter tool
 Reasons for the openapi json scheme generator difference
 - has overload type hints on all endpoints, allows input content type selection
 - json paths used to create files so many files made
-- object models have getters written for optional properties
+- object models have `__getitem__` methods for properties
+- most of the code comes from paths, can itbe reduced?
 
 ## Generate
 
@@ -49,7 +50,7 @@ docker run --rm -v "${PWD}:/local" openapitools/openapi-generator-cli:v6.5.0 gen
     -g python-nextgen \
     -o /local/openapi_generator_python_nextgen
 
-docker run --rm -v "${PWD}:/local" openapjsonschematools/openapi-json-schema-generator-cli:2.0.0 generate \
+docker run --rm -v "${PWD}:/local" openapijsonschematools/openapi-json-schema-generator-cli:3.0.0-latest generate \
     -i /local/petstore.yaml \
     -g python \
     -o /local/openapi_json_schema_generator_python
