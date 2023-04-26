@@ -101,49 +101,6 @@ class User(
     ):
         # dict_instance[name] accessor
         return super().__getitem__(name)
-    
-    @typing.overload
-    def get_item_(self, name: typing_extensions.Literal["id"]) -> typing.Union[Schema_.Properties.Id, schemas.Unset]: ...
-    
-    @typing.overload
-    def get_item_(self, name: typing_extensions.Literal["username"]) -> typing.Union[Schema_.Properties.Username, schemas.Unset]: ...
-    
-    @typing.overload
-    def get_item_(self, name: typing_extensions.Literal["firstName"]) -> typing.Union[Schema_.Properties.FirstName, schemas.Unset]: ...
-    
-    @typing.overload
-    def get_item_(self, name: typing_extensions.Literal["lastName"]) -> typing.Union[Schema_.Properties.LastName, schemas.Unset]: ...
-    
-    @typing.overload
-    def get_item_(self, name: typing_extensions.Literal["email"]) -> typing.Union[Schema_.Properties.Email, schemas.Unset]: ...
-    
-    @typing.overload
-    def get_item_(self, name: typing_extensions.Literal["password"]) -> typing.Union[Schema_.Properties.Password, schemas.Unset]: ...
-    
-    @typing.overload
-    def get_item_(self, name: typing_extensions.Literal["phone"]) -> typing.Union[Schema_.Properties.Phone, schemas.Unset]: ...
-    
-    @typing.overload
-    def get_item_(self, name: typing_extensions.Literal["userStatus"]) -> typing.Union[Schema_.Properties.UserStatus, schemas.Unset]: ...
-    
-    @typing.overload
-    def get_item_(self, name: str) -> typing.Union[schemas.UnsetAnyTypeSchema, schemas.Unset]: ...
-    
-    def get_item_(
-        self,
-        name: typing.Union[
-            typing_extensions.Literal["id"],
-            typing_extensions.Literal["username"],
-            typing_extensions.Literal["firstName"],
-            typing_extensions.Literal["lastName"],
-            typing_extensions.Literal["email"],
-            typing_extensions.Literal["password"],
-            typing_extensions.Literal["phone"],
-            typing_extensions.Literal["userStatus"],
-            str
-        ]
-    ):
-        return super().get_item_(name)
 
     def __new__(
         cls,
