@@ -25,7 +25,12 @@ via vscode code counter tool
 | -------- | ----- | ---- |
 | openapi_generator_python_nextgen | 27 | 2712 |
 | openapi_generator_python_prior | 30 | 5075 |
-| openapi_json_schema_generator_python | 365 | 12875
+| openapi_json_schema_generator_python | 365 | 12701
+
+
+### openapi_json_schema_generator_python breakdown
+- 7.8k src/openapi_client/paths
+- most of this comes from the 3x operation typing overloads
 
 Reasons for the openapi json scheme generator difference
 - has overload type hints on all endpoints, allows input content type selection
