@@ -22,11 +22,11 @@ from openapi_client import schemas
 
 
 @dataclasses.dataclass
-class _ApiResponse(api_client.ApiResponse):
+class ApiDefault(api_client.ApiResponse):
     response: urllib3.HTTPResponse
     body: schemas.Unset = schemas.unset
     headers: schemas.Unset = schemas.unset
 
 
-class Default(api_client.OpenApiResponse[_ApiResponse]):
-    response_cls = _ApiResponse
+class Default(api_client.OpenApiResponse[ApiDefault]):
+    response_cls = ApiDefault
