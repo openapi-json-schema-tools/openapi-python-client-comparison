@@ -25,7 +25,7 @@ via vscode code counter tool
 | -------- | ----- | ---- |
 | openapi_generator_python_nextgen | 27 | 2712 |
 | openapi_generator_python_prior | 30 | 5075 |
-| openapi_json_schema_generator_python | 365 | 12701
+| openapi_json_schema_generator_python | 365 | 9911
 
 
 ### openapi_json_schema_generator_python breakdown
