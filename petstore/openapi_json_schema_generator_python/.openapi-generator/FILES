@@ -1,6 +1,5 @@
 .gitignore
 .gitlab-ci.yml
-.openapi-generator-ignore
 .travis.yml
 README.md
 docs/apis/tags/pet_api.md
@@ -366,12 +365,6 @@ test-requirements.txt
 test/__init__.py
 test/components/__init__.py
 test/components/schema/__init__.py
-test/components/schema/test_api_response.py
-test/components/schema/test_category.py
-test/components/schema/test_order.py
-test/components/schema/test_pet.py
-test/components/schema/test_tag.py
-test/components/schema/test_user.py
 test/test_paths/__init__.py
 test/test_paths/__init__.py
 test/test_paths/__init__.py
