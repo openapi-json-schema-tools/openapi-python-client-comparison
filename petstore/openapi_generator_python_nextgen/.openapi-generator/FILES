@@ -20,6 +20,7 @@ openapi_client/api/pet_api.py
 openapi_client/api/store_api.py
 openapi_client/api/user_api.py
 openapi_client/api_client.py
+openapi_client/api_response.py
 openapi_client/configuration.py
 openapi_client/exceptions.py
 openapi_client/models/__init__.py

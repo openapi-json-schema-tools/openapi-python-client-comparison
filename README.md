@@ -23,15 +23,15 @@ via vscode code counter tool
 
 | Generator | Files | Code |
 | -------- | ----- | ---- |
-| openapi_generator_python_nextgen | 27 | 2712 |
+| openapi_generator_python_nextgen | 28 | 2781 |
 | openapi_generator_python_prior | 30 | 5075 |
-| openapi_json_schema_generator_python | 365 | 9527
+| openapi_json_schema_generator_python | 365 | 9256
 
 
 ### openapi_json_schema_generator_python breakdown
-- 4.7k src/openapi_client/paths
+- 4.4k src/openapi_client/paths
   - ~ 50% of this is in operation.py
-- 3.2k 7 files in src/openapi_client
+- 3.3k 7 files in src/openapi_client
   - api_client.py + schemas.py are big
 - most of this comes from the 3x operation typing overloads
 
@@ -53,7 +53,7 @@ docker run --rm -v "${PWD}:/local" openapitools/openapi-generator-cli:v6.5.0 gen
     -g python-prior \
     -o /local/openapi_generator_python_prior
 
-docker run --rm -v "${PWD}:/local" openapitools/openapi-generator-cli:v6.5.0 generate \
+docker run --rm -v "${PWD}:/local" openapitools/openapi-generator-cli generate \
     -i /local/petstore.yaml \
     -g python-nextgen \
     -o /local/openapi_generator_python_nextgen
@@ -62,3 +62,4 @@ docker run --rm -v "${PWD}:/local" openapijsonschematools/openapi-json-schema-ge
     -i /local/petstore.yaml \
     -g python \
     -o /local/openapi_json_schema_generator_python
+/Users/justinblack/programming/openapi-python-client-comparison/petstore/openapi_generator_python_prior/
