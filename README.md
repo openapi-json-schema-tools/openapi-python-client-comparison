@@ -25,13 +25,13 @@ via vscode code counter tool
 | -------- | ----- | ---- |
 | openapi_generator_python_nextgen | 27 | 2712 |
 | openapi_generator_python_prior | 30 | 5075 |
-| openapi_json_schema_generator_python | 365 | 9911
+| openapi_json_schema_generator_python | 365 | 9527
 
 
 ### openapi_json_schema_generator_python breakdown
-- 5.7k src/openapi_client/paths
+- 4.7k src/openapi_client/paths
   - ~ 50% of this is in operation.py
-- 3.3k 7 files in src/openapi_client
+- 3.2k 7 files in src/openapi_client
   - api_client.py + schemas.py are big
 - most of this comes from the 3x operation typing overloads
 
