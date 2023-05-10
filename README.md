@@ -25,11 +25,11 @@ via vscode code counter tool
 | -------- | ----- | ---- |
 | openapi_generator_python_nextgen | 28 | 2781 |
 | openapi_generator_python_prior | 30 | 5075 |
-| openapi_json_schema_generator_python | 365 | 9256
+| openapi_json_schema_generator_python | 365 | 8737
 
 
 ### openapi_json_schema_generator_python breakdown
-- 4.4k src/openapi_client/paths
+- 3.9k src/openapi_client/paths
   - ~ 50% of this is in operation.py
 - 3.3k 7 files in src/openapi_client
   - api_client.py + schemas.py are big
@@ -38,8 +38,6 @@ via vscode code counter tool
 Reasons for the openapi json scheme generator difference
 - has overload type hints on all endpoints, allows input content type selection
 - json paths used to create files so many files made
-- object models have `__getitem__` methods for properties
-- most of the code comes from paths, can itbe reduced?
 
 ## Generate
 
